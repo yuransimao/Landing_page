@@ -6,6 +6,8 @@
     margin:0;
     padding: 0;
     text-decoration: none;
+    border: none;
+    background: none;
 }
 
 
@@ -13,6 +15,9 @@
 :root{
     --text-color-b:#2b2929f6;
     --font-Montserrat:'Montserrat', sans-serif;
+    --font-Roboto:'Roboto', sans-serif;
+    --color-btn:#165dfc;
+    --color-white:#fff;
 }
 
 html{
@@ -23,6 +28,7 @@ html{
 body{
     width:100%;
     height:100%;
+    font-family: var(--font-Roboto);
 }
 
 .wrapper{
@@ -53,4 +59,26 @@ display: flex;
     color:var(--text-color-b);
     font-size: 1.5rem;
     cursor:pointer;
+}
+
+.header  .sign > button {
+    margin:0 1rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all .6s ease-in-out;
+}
+
+.header  .sign > button:nth-child(2){
+    background-color:var(--color-btn);
+    color:var(--color-white);
+    border-radius:0.5rem ;
+    padding:1rem;
+    
+}
+
+.header  .sign > button:nth-child(2):hover{
+    filter: brightness(0.9);
+}
+.header  .sign > button:nth-child(1):hover{
+    text-decoration: underline;
 }
